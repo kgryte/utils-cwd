@@ -17,12 +17,12 @@ var expect = chai.expect,
 
 describe( 'utils-cwd', function tests() {
 
-	it( 'should export a string', function test() {
-		expect( cwd ).to.be.a( 'string' );
+	it( 'should alias `process.cwd()` and export a function', function test() {
+		expect( cwd ).to.be.a( 'function' );
 	});
 
 	it( 'should return the current working directory', function test() {
-		assert.strictEqual( cwd, process.cwd() );
+		assert.strictEqual( cwd(), process.cwd() );
 	});
 
 });

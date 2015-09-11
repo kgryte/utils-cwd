@@ -18,12 +18,12 @@ $ npm install utils-cwd
 var cwd = require( 'utils-cwd' );
 ```
 
-#### cwd
+#### cwd()
 
-The current working directory.
+Alias for [`process.cwd()`](https://nodejs.org/api/process.html#process_process_cwd).
 
 ``` javascript
-console.log( cwd );
+console.log( cwd() );
 ```
 
 
@@ -33,7 +33,7 @@ console.log( cwd );
 var path = require( 'path' ),
 	cwd = require( 'utils-cwd' );
 
-var parts = cwd.split( path.sep );
+var parts = cwd().split( path.sep );
 console.log( parts );
 ```
 

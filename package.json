@@ -30,7 +30,8 @@
     "cwd",
     "pwd",
     "path",
-    "dir"
+    "dir",
+    "alias"
   ],
   "bugs": {
     "url": "https://github.com/kgryte/utils-cwd/issues"
